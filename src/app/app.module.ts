@@ -9,9 +9,10 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { BioComponent } from './components/bio/bio.component';
 import { ProjectDetailsComponent } from './components/project-details/project-details.component';
 import { ProjectService } from './components/services/project.service';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { ContactComponent } from './components/contact/contact.component';
 import { SkillsComponent } from './components/skills/skills.component';
+
+
 
 @NgModule({
   declarations: [			
@@ -28,7 +29,8 @@ import { SkillsComponent } from './components/skills/skills.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    AngularFontAwesomeModule
+
+    
   ],
   providers: [ProjectService],
   bootstrap: [AppComponent]
