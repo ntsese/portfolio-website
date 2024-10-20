@@ -8,7 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { BioComponent } from './components/bio/bio.component';
 import { ProjectDetailsComponent } from './components/project-details/project-details.component';
-import { ProjectService } from './components/services/project.service';
+import { ProjectService } from './services/project.service';
 import { ContactComponent } from './components/contact/contact.component';
 import { SkillsComponent } from './components/skills/skills.component';
 

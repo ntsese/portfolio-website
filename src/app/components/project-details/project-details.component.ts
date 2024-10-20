@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { project } from '../models/project';
+import { Project } from 'src/app/interfaces/project';
 import { ActivatedRoute } from '@angular/router';
-import { ProjectService } from '../services/project.service';
+import { ProjectService } from '../../services/project.service';
 
 @Component({
   selector: 'app-project-details',
@@ -10,7 +10,7 @@ import { ProjectService } from '../services/project.service';
 })
 export class ProjectDetailsComponent implements OnInit {
 
-  project: project;
+  project: Project;
 
   constructor(
     private route: ActivatedRoute,

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { project } from '../models/project';
-import { ProjectService } from '../services/project.service';
+import { Project } from 'src/app/interfaces/project';
+import { ProjectService } from '../../services/project.service';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +9,7 @@ import { ProjectService } from '../services/project.service';
 })
 export class HomeComponent implements OnInit {
 
-  featureProjects: project[] = [];
+  featureProjects: Project[] = [];
 
   constructor(private projectService: ProjectService) { }
 

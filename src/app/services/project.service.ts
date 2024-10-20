@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { project } from '../models/project';
+import { Project } from 'src/app/interfaces/project';
 
 @Injectable()
 export class ProjectService {
@@ -8,7 +8,7 @@ export class ProjectService {
 constructor() { }
 
 
-    private projects: project[] = [
+    private projects: Project[] = [
         {
             id: 1,
             name: 'Project 1',
@@ -24,15 +24,15 @@ constructor() { }
     ];
 
 
-    getFeaturedProjects(): project[]{
+    getFeaturedProjects(): Project[]{
         return this.projects.slice(0,2); //return the first project featured
     }
 
-    getAllProject(): project[]{
+    getAllProject(): Project[]{
         return this.projects;
     }
 
-    getProject(id: number): project{
+    getProject(id: number): Project{
         return this.projects.find(project => project.id == id);
     }
 
