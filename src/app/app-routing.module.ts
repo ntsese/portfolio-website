@@ -7,11 +7,12 @@ import { ContactComponent } from './components/contact/contact.component';
 import { SkillsComponent } from './components/skills/skills.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
+  {path: 'home', component: HomeComponent},
   {path: 'projects', component: ProjectsComponent},
   {path:'About',component:BioComponent},
   {path: 'contact', component: ContactComponent},
-  {path: 'skills', component: SkillsComponent}
+  {path: 'skills', component: SkillsComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
 @NgModule({

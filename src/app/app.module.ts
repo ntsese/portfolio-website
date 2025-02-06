@@ -11,6 +11,7 @@ import { ProjectDetailsComponent } from './components/project-details/project-de
 import { ProjectService } from './services/project.service';
 import { ContactComponent } from './components/contact/contact.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -22,7 +23,8 @@ import { SkillsComponent } from './components/skills/skills.component';
       BioComponent,
       ProjectDetailsComponent,
       ContactComponent,
-      SkillsComponent
+      SkillsComponent,
+      FooterComponent
    ],
   imports: [
     BrowserModule,
