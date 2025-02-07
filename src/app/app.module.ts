@@ -12,6 +12,7 @@ import { ProjectService } from './services/project.service';
 import { ContactComponent } from './components/contact/contact.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 
 
@@ -24,7 +25,8 @@ import { FooterComponent } from './components/footer/footer.component';
       ProjectDetailsComponent,
       ContactComponent,
       SkillsComponent,
-      FooterComponent
+      FooterComponent,
+      NavBarComponent
    ],
   imports: [
     BrowserModule,

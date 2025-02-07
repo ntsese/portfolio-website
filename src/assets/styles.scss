@@ -3,17 +3,13 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+    //margin: 0;
+    //padding: 0;
     background: #141e30;
     height: 100vh;
-    display: flex;
-    //flex-direction: column;
-    //justify-content: center;
-    //align-items: center;
+    display: flex !important;
     color: white;
-    //text-align: center;
-    padding: 20px;
+    //padding: 20px;
   }
 
   .page-container{
@@ -21,9 +17,48 @@ body {
     min-height: 100vh;
   }
 
+  .navbar {
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #141e30;
+  
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  
+    .navbar-toggler {
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  
+    .nav-link {
+      font-size: 1rem;
+      color: white;
+      margin: 0 0.5rem;
+  
+      &:hover {
+        color: #007bff;
+      }
+    }
+  }
+  
+
 
   .page-wrap{
     padding-bottom: 2rem;
+  }
+
+  .footer {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #141e30;
   }
 
 
