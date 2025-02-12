@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">My Portfolio</a>
+    <a class="navbar-brand">My Portfolio</a>
     <button 
       class="navbar-toggler" 
       type="button" 
@@ -15,19 +15,19 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" [routerLink]="['/']">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" [routerLink]="['/projects']" routerLinkActive="router-link-active">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#experience">Experience</a>
+          <a class="nav-link" [routerLink]="['/about']" routerLinkActive="router-link-active">Experience</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" [routerLink]="['/skills']" routerLinkActive="router-link-active" >Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="router-link-active" >Contact</a>
         </li>
       </ul>
     </div>
