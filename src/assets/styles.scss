@@ -13,8 +13,13 @@ body {
   }
 
   .page-container{
-    position: absolute;
+    //position: absolute;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   // padding: 20px;
   }
 
   .navbar {
@@ -55,7 +60,6 @@ body {
     color: white;
     text-align: center;
     padding: 1rem;
-    position: absolute;
     bottom: 0;
     width: 100%;
     background-color: #141e30;
