@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Skill, SKILLS } from 'src/app/interfaces/skills';
 
 @Component({
   selector: 'app-skills',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-
-  constructor() { }
+  skills: Skill[] = [];
 
   ngOnInit() {
+    this.skills = SKILLS; // Load the skills from the interface
   }
 
 }

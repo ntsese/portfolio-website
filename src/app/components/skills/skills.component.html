@@ -1,15 +1,13 @@
-
- <div class="page-container">
+<div class="page-container">
   <section class="skills-section">
     <h2>My Skills</h2>
-    <div class="skills-list">
-      <div class="skill-item">HTML</div>
-      <div class="skill-item">CSS</div>
-      <div class="skill-item">JavaScript</div>
-      <div class="skill-item">Angular</div>
-      <div class="skill-item">Bootstrap</div>
-      <div class="skill-item">C#</div>
-      <div class="skill-item">SQL</div>
+    <div class="skills-grid">
+      <div class="skill-card" *ngFor="let skill of skills">
+        <img [src]="skill.icon" [alt]="skill.name" class="skill-icon" />
+        <h3>{{ skill.name }}</h3>
+        <p>{{ skill.level }}</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
     </div>
   </section>
 </div>
