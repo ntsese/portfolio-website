@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   constructor(private projectService: ProjectService) { }
 
   ngOnInit() {
-    this.featureProjects = this.projectService.getFeaturedProjects();
+    
   }
 
 }
