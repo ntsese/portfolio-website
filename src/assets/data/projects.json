@@ -1,0 +1,10 @@
+[
+  {
+    "title": "LoginAuth Angular + ASP.NET",
+    "description": "A full-stack authentication system using Angular for the frontend and ASP.NET for the backend.",
+    "technologies": ["Angular", "ASP.NET", "C#", "TypeScript"],
+    "github": "https://github.com/ntsese/LoginAuth_Angular_ASP.net",
+    "demo": "",
+    "image": ""
+  }
+]

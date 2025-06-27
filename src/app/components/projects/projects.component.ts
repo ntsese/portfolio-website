@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ProjectService } from '../../services/project.service';
+import { Project } from '../../interfaces/project';
 
 @Component({
   selector: 'app-projects',
@@ -7,10 +8,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
+  projectsList: Project[] = [];
+  selectedProject: Project | null = null;
 
-  constructor(private route: Router) { }
+  constructor(private projectService: ProjectService) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.projectsList = this.projectService.getProjects();
   }
 
+  selectProject(project: Project) {
+    this.selectedProject = project;
+  }
 }

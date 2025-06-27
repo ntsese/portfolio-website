@@ -1,10 +1,8 @@
-export interface Projects {
-    projects: Project[];
-  }
-  
-  export interface Project {
-    id: number;
-    name: string;
-    description: string;
-    image: string;
+export interface Project {
+  title: string;
+  description: string;
+  github: string;
+  demo?: string;
+  image?: string;
+  technologies: string[];
   }
